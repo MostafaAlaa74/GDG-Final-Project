@@ -1,0 +1,494 @@
+/* Start Global Rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+}
+.container {
+    padding: 0 30px 0 30px;
+    margin: 0 auto 0 auto ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* End Global Rules */
+
+/* Start Header */
+header .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .header{
+
+    padding-top: 15px;
+}
+
+header .header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header .header nav ul li {
+    padding-left: 50px;
+}
+
+header .header nav ul li a{
+    color: #000000;
+    transition: 0.3s;
+}
+
+header .header nav ul li a:hover{
+    color: #7C770C;
+}
+
+header .header nav ul .active{
+    color: #7C770C;
+    font-family:Poppins;
+    font-size: 18px;
+}
+
+header .header nav ul .categ{
+    display: flex;
+    align-items: center;
+}
+
+header .header nav ul .categ img{
+    padding-left: 6px;
+}
+
+header .header p{
+    color: #1E1E1E;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header .header .icons{
+    display: flex;
+    align-items: center;
+}
+
+header .header .icons li{
+    padding-left: 25px;
+    font-size: 23px;
+} 
+
+header .header .icons .user{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+header .header .icons .user a{
+    color: #000000;
+}
+
+
+header .header .icons .shopping{
+    position: relative;
+}
+
+header .header .icons .shopping::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height:20px;
+    background-color: #F5EE1C;
+    border-radius: 50%;
+    right: -9px;
+    top: -12px;
+    padding: 1px;
+}
+
+header .header .icons .shopping::before{
+    content: "3";
+    position: absolute;
+    color: white;
+    top: -12px;
+    right: -5px;
+    z-index: 1;
+}
+
+header .header .icons .bell{
+    position: relative;
+}
+
+header .header .icons .bell i{
+    font-size: 28px;
+}
+
+header .header .icons .bell::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height:10px;
+    background-color: red;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+}
+
+
+
+header .inputs {
+    padding-top: 20px;
+}
+
+header .inputs form {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+header .inputs form .text {
+    width: 26%;
+    position: relative;
+}
+
+header .inputs form input[type="text"] {
+    width: 100%;
+    padding: 17px 17px 17px 43px;
+    border-radius: 7px;
+    border: 2px solid #000000;
+}
+
+header .inputs form .location {
+    position: absolute;
+    left: 15px;
+    font-size: 22px;
+    top: 25%;
+    color: red;
+}
+
+header .inputs form .down {
+    position: absolute;
+    right: 15px;
+    top: 30%;
+    color: #000000;
+}
+
+header .inputs form .search {
+    width: 50%;
+    position: relative;
+}
+
+header .inputs form input[type="search"] {
+    width: 100%;
+    padding: 17px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+header .inputs form input[type="text"],
+header .inputs form input[type="search"]:focus {
+    outline: none;
+}
+
+header .inputs form .search .srch {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    font-size: 20px;
+}
+
+header .inputs form  .submit{
+    width: 12%;
+} 
+
+header .inputs form input[type="submit"] {
+    width: 100%;
+    padding: 17px;
+    background-color:#F5EE1C;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid #F5EE1C;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header .inputs form input[type="submit"]:hover {
+    cursor: pointer;
+}
+/* End Header */
+
+
+
+
+.link .container ul{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.link .container ul li {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.link .container ul .home {
+    color: #7C770C;
+    font-family:Poppins;
+    font-size: 18px;
+}
+
+
+.link .container ul .head a {
+    color: #000;
+    font-family:Poppins;
+    font-size: 32px;
+}
+
+.text{
+    text-align: center;
+}
+
+.text h3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 69.09px;
+    text-align: center;
+    color: #000;
+}
+
+.text p {
+    padding-top: 30px;
+    width: fit-content;
+    margin: auto;
+    line-height: 3.7;
+    font-size: 25px;
+    color: #0000008b;
+}
+
+
+
+
+form .box{
+    width: 1000px;
+    margin: auto;
+}
+
+form .box .content{
+    display: flex;
+    align-items: center;
+    margin-bottom:50px ;
+}
+
+form .box .content .box{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+form .box .content .box:nth-child(2){
+    margin-left: 40px;
+}
+
+form .box .content .box label {
+    padding-bottom: 10px;
+}
+
+form .box .content .box input{
+    padding: 14.39px;
+    padding-left: 21.59px;
+    border-radius: 14.39px;
+    border: 1px solid ;
+}
+
+form .box .content .box .first-name{
+    position: relative;
+}
+form .box .first{
+    position: absolute;
+    width: 30px;
+}
+
+
+form .box .email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .box .email{
+    margin-bottom:50px ;
+}
+
+form .box .email label{
+    padding-bottom: 10px;
+}
+
+form .box .email input{
+    padding: 14.39px;
+    padding-left: 21.59px;
+    border-radius: 14.39px;
+    border: 1px solid ;
+}
+
+form .box .message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+form .box .message label {
+    padding-bottom: 10px;
+}
+
+form .box textarea{
+    height: 250px;
+    padding: 10px;
+} 
+
+form .box button{
+    background-color: #F5EE1C;
+    color: white;
+    width: 100%;
+    border: 1px solid #F5EE1C;
+    padding:  10px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+form .box .content input
+,form .box .email input
+,form .box textarea:focus{
+    outline: none;
+}
+
+.c-ontent {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.c-ontent h3 {
+    font-size: 65px;
+}
+
+.c-ontent .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-top: 100px;
+} 
+
+.c-ontent .cont .box:nth-of-type(1){
+    border-color: #115573;
+}
+
+.c-ontent .cont .box{
+    border: 1px solid #ddd;
+    width: 20%;
+    padding: 15px;
+    border-radius: 23.03px;
+}
+
+.c-ontent .cont .box .icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 15px;
+}
+
+.c-ontent .cont .box .icon img {
+    width: 22px;
+}
+
+.c-ontent .cont .box p{
+    text-decoration: underline;
+}
+
+.c-ontent .cont .box p a{
+    color: #000000;
+}
+
+.c-ontent .cont .box button {
+    margin-top: 25px;
+    background-color: #F5EE1C;
+    color: white;
+    padding: 6px 25px;
+    border: 1px solid #F5EE1C;
+    border-radius: 15.83px;
+}
+
+
+/* Start Footer */
+.footer{
+    margin-top: 60px;
+    background-color: #000000;
+    color: white;
+    padding: 40px ;
+}
+
+.footer .links{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(270px , 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.footer .links .social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .links .social .logo {
+    width: 81px;
+    margin-bottom: 20px;
+}
+
+.footer .links  .customer li a
+,.footer .links  .profile li a
+,.footer .links  .contact-us li a{
+    display: block;
+    color: white;
+}
+
+
+.footer .links  .customer h3
+,.footer .links  .profile h3
+,.footer .links  .contact-us h3{
+    margin-bottom: 35px;
+}
+
+.footer .links  .customer li
+,.footer .links  .profile li 
+,.footer .links  .contact-us li {
+    padding-bottom: 20px;
+}
+
+.footer hr {
+    border-color: #808080;
+    width: 100%;
+}
+
+.footer .terms{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.footer .terms span {
+    padding-left: 30px;
+}
+/* End Footer */

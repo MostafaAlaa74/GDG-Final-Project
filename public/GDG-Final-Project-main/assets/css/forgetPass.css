@@ -1,0 +1,106 @@
+/* Start Global Rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+    background-image: url("../images/circles.svg");
+    background-size: cover;
+}
+.container {
+    padding: 0 30px 0 30px;
+    margin: 0 auto 0 auto ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* End Global Rules */
+
+.back{
+    margin-left: 100px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.back a {
+    color: #000000;
+    margin-left: 10px;
+}
+
+
+.forget-pass{
+    width: 529px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.forget-pass .img{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forget-pass .text h3{
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+.forget-pass .text p{
+    font-size: 15px;
+    color: #00000094;
+    padding-bottom: 16px;
+}
+
+.forget-pass form .email{
+    position: relative;
+}
+
+.forget-pass form .email .input{
+    display: flex;
+    flex-direction: column;
+}
+
+.forget-pass form .email img {
+    position: absolute;
+    top: 31px;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.forget-pass form .email .input  label{
+    margin-bottom: 7px;
+    
+}
+
+.forget-pass form .email .input input{
+    margin-bottom: 15px;
+    padding: 10px 40px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.forget-pass form .email .input input:focus{
+    outline: none;
+}
+
+.forget-pass form input[type = "submit"]{
+    padding: 10px;
+    background-color: #F5EE1C;
+    width: 70%;
+    color: white;
+    border: 1px solid #F5EE1C;
+    border-radius: 10px;
+}

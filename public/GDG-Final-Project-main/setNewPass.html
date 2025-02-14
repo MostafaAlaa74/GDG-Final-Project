@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set New Password</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/setNewPass.css">
+</head>
+<body>
+    <div class="back">
+        <a href="resetPass.html"><img src="./assets/images/arrow-left.png" alt=""></a>
+        <a href="resetPass.html">Back</a>
+    </div>
+
+    <div class="forget-pass">
+        <div class="img">
+            <img src="./assets/images/mesg.png" alt="">
+        </div>
+        <div class="text">
+            <h3>Set your new password</h3>
+            <p>Must be at least 8 characters.</p>
+        </div>
+        <form action="SuccessfullyReset.html">
+            <div class="pass">
+                <div class="input">
+                    <label for="pass">New Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Enter Your new password" required  minlength="8" maxlength="20">
+                </div>
+                <img src="./assets/images/lock.png" class="lock" alt="">
+                <img src="./assets/images/eye-slash.png" class="eye" alt="">
+            </div>
+            <div class="confirm-pass">
+                <div class="input">
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirm Your password" required minlength="8" maxlength="20">
+                </div>
+                <img src="./assets/images/lock.png" class="lock" alt="">
+                <img src="./assets/images/eye-slash.png" class="eye" alt="">
+            </div>
+            <input type="submit" value="Reset Password">
+        </form>
+    </div>
+</body>
+</html>

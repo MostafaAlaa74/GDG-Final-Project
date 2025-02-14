@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carts</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+<body>
+
+
+ <!-- Start Header-->
+ <header>
+    <div class="header" id="top">
+        <div class="logo">
+            <a href="index.html"><img src="./assets/images/Logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="categ"><a href="#gategory">categories</a><img src="./assets/images/arrow-down.png" alt=""></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="lang">Arabic</p>
+        <ul class="icons">
+            <li><img src="./assets/images/heart.png" alt=""></li>
+            <li class="user"><a href="profile.html"><i class="fa-regular fa-user"></i></a></i>
+                <img src="./assets/images/arrow-down.png" alt="">
+            </li>
+            <li class="shopping"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li class="bell"><i class="fa-regular fa-bell"></i></li>
+        </ul>
+    </div>
+    <div class="inputs">
+        <form method="post">
+            <div class="text">
+                <input type="text" name="" id="" placeholder="Egypt" required>
+                <i class="fa-solid fa-location-dot location"></i>
+                <img src="./assets/images/arrow-down.png" class="down" alt="">
+            </div>
+            <div class="search">
+                <input type="search" name="" id="" placeholder="Search">
+                <i class="fa-solid fa-search srch"></i>
+            </div>
+            <div class="submit"><input type="submit" value="Search"></div>
+        </form>
+    </div>
+</header>
+<!-- End Header-->
+
+<div class="link">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="index.html" class="home"> Home </a> 
+                <a href="index.html"> <img src="./assets/images/Frame.png"> </a>
+            </li>
+            <li class="head"><a href="#"><img src="./assets/images/simple-line-icons_basket.png" alt=""> Cart</a></li>
+        </ul> 
+    </div>
+</div>
+
+    <div class="progress-steps">
+        <div class="step step1 completed">
+            <div class="circle">1</div>
+            <span class="step-label">Cart</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <div class="circle">2</div>
+            <span class="step-label">Check Out</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <div class="circle">3</div>
+            <span class="step-label">Payment</span>
+        </div>
+    </div>
+    
+ <div class="addtocard">
+    <div class="container-card">
+        <div class="card-list">
+            <div class="card">
+                <img src="./assets/images/cart-1.png" alt="Product 1">
+                <h2>Ultra 2</h2>
+
+                <div class="price-card">
+                    <p> <span>500$</span> $10.00</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="product-options">
+                    <div class="color-select">
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            <!-- c a r d 2-->
+
+            <div class="card">
+                <img src="./assets/images/cart-2.png" alt="Product 1">
+                <h2>HyperCore X</h2>
+
+                <div class="price-card">
+                    <p> <span>500$</span> $10.00</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="product-options">
+                    <div class="color-select">
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            <!-- c a r d 3-->
+            <div class="card">
+                <img src="./assets/images/cart-3.png" alt="Product 1">
+                <h3>Beats Studio pro</h3>
+
+                <div class="price-card">
+                    <p> <span>500$</span> $10.00</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="product-options">
+                    <div class="color-select">
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <!-- c a r d 3-->
+            <div class="card">
+                <img src="./assets/images/cart-4.png" alt="Product 1">
+                <h3>WaterProof Laptop Bag</h3>
+
+                <div class="price-card">
+                    <p> <span>500$</span> $10.00</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-solid fa-star" id="bright"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="product-options">
+                    <div class="color-select">
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+   <div class="total-card">
+    <h2>Order Summary</h2>
+
+    <img src="./assets/images/total.png" alt="">
+    <ul id="card-items">
+        <li>Your cart is empty.</li>
+    </ul>
+
+    <hr>
+     <div class="total-price">
+        <p>Total:</p>
+        <p> $<span id="total-price">0.00</span></p>
+     </div>
+     <a href="addres.html"><button> CheckOut</button></a>
+
+   </div> 
+    </div>
+
+     <!-- Start Footer -->
+     <div class="footer">
+        <div class="links">
+            <ul class="social">
+                <li>
+                    <a href="index.html"><img src="./assets/images/Mask group.png" alt="" class="logo"></a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./assets/images/Facebook.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/Instagram.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/X.png" alt=""></a>
+                </li>
+            </ul>
+            <ul class="customer">
+                <h3>Customer Sercvices</h3>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul class="profile">
+                <h3>Profile</h3>
+                <li><a href="profile.html">My account</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Account settings</a></li>
+            </ul>
+            <ul class="contact-us">
+                <h3>Contact us</h3>
+                <li><a href="tel:+305-555-0123">Phone: 305-555-0123</a></li>
+                <li><a href="mailto:contactstore@fakemail.com">Email: contactstore@fakemail.com</a></li>
+                <li>Address: 789 Elm St. Orlando, FL 32801</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="terms">
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+            <span>© 2024 Luxira, All Rights Reserved.</span>
+        </div>
+        </div> 
+        <!-- End Footer -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

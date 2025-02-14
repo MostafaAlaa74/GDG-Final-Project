@@ -1,0 +1,110 @@
+/* Start Global Rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Poppins;
+    background-image: url("../images/circles.svg");
+    background-size: cover;
+}
+.container {
+    padding: 0 30px 0 30px;
+    margin: 0 auto 0 auto ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* End Global Rules */
+
+.back{
+    margin-left: 100px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.back a {
+    color: #000000;
+    margin-left: 10px;
+}
+
+
+.pass-reset{
+    width: 529px;
+    padding-top: 80px;
+    margin: auto;
+}
+
+.pass-reset .img{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pass-reset .text h3{
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+.pass-reset .text p{
+    font-size: 15px;
+    color: #00000094;
+    padding-bottom: 20px;
+}
+
+.pass-reset .text p span{
+    font-weight: bold;
+}
+
+.pass-reset form .inputs{
+    width: 68% ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pass-reset form .inputs input[type = "text"]{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pass-reset form .inputs input[type = "text"]:focus{
+    outline: none;
+}
+
+.pass-reset form a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #F5EE1C;
+    width: 70%;
+    color: white;
+    border: 1px solid #F5EE1C;
+    border-radius: 10px;
+}
+
+.pass-reset p {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #00000087 ;
+}
+
+.pass-reset p a {
+    text-decoration: underline;
+    color: #0F4D68;
+}

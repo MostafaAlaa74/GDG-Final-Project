@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <title>Clothes Page</title>
+    <style>
+        .filter-section #btn {
+      width: 300px;
+      text-decoration: none;
+      padding: 11px 10px;  
+      border-radius: 12px;
+      border: 1px solid;
+      background-color: yellow;
+      color: white;
+      font-size: 18px;
+      }
+        </style>
+</head>
+
+<body>
+
+   
+  <!-- Start Header-->
+  <header>
+    <div class="header" id="top">
+        <div class="logo">
+            <a href="index.html"><img src="./assets/images/Logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="categ"><a href="#gategory">categories</a><img src="./assets/images/arrow-down.png" alt=""></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="lang">Arabic</p>
+        <ul class="icons">
+            <li><img src="./assets/images/heart.png" alt=""></li>
+            <li class="user"><a href="profile.html"><i class="fa-regular fa-user"></i></a></i>
+                <img src="./assets/images/arrow-down.png" alt="">
+            </li>
+            <li class="shopping"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li class="bell"><i class="fa-regular fa-bell"></i></li>
+        </ul>
+    </div>
+    <div class="inputs">
+        <form method="post">
+            <div class="text">
+                <input type="text" name="" id="" placeholder="Egypt" required>
+                <i class="fa-solid fa-location-dot location"></i>
+                <img src="./assets/images/arrow-down.png" class="down" alt="">
+            </div>
+            <div class="search">
+                <input type="search" name="" id="" placeholder="Search">
+                <i class="fa-solid fa-search srch"></i>
+            </div>
+            <div class="submit"><input type="submit" value="Search"></div>
+        </form>
+    </div>
+</header>
+<!-- End Header-->
+
+
+<div class="link">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="index.html" class="home"> Home </a> 
+                <a href="index.html"> <img src="./assets/images/Frame.png"> </a>
+            </li>
+            <li class="head"><a href="#">Clothes</a></li>
+        </ul> 
+    </div>
+</div>
+
+
+
+    <div class="container">
+        <aside class="filter-section">
+            <div class="filter-header">
+                <h3>Filters</h3>
+                <!--
+                <span class="filter-icon">&#x1F50E;&#xFE0E;</span>
+                -->
+            </div>
+            <hr>
+            <div class="category">
+                <h4>Category</h4>
+                <div class="filter-group">
+                    <label><input type="checkbox" class="filter" value="Tennis" name="filter"> Shirt</label><br>
+                    <label><input type="checkbox" class="filter" value="tennis" name="filter"> Shorts</label><br>
+                    <label><input type="checkbox" class="filter" value="soccer" name="filter"> Suits</label><br>
+                    <label><input type="checkbox" class="filter" value="basketball" name="filter"> Hoodies</label><br>
+                    <label><input type="checkbox" class="filter" value="basketball" name="filter"> Jeans</label><br>
+                </div>
+
+                <hr>
+                <div class="price-group">
+                        <h4>Price</h4>
+                        <label><input type="checkbox" class="filter" value="Tennis" name="filter"> 50.0$ - 100.0$</label><br>
+                        <label><input type="checkbox" class="filter" value="tennis" name="filter"> 100.0$ -250.0$</label><br>
+                        <label><input type="checkbox" class="filter" value="soccer" name="filter"> 400.00$ - 650.000$</label><br>
+                        <label><input type="checkbox" class="filter" value="basketball" name="filter"> 650.00$ - 900.00$</label><br>
+            </div>
+                <hr>
+
+            <hr>
+
+                <div class="size-Group">
+                    <h4>Size</h4>
+                    <div class="size">
+                        <button   value="small" name="filter">XX-Small</button>
+                        <button  value="small" name="filterX-Small">X-Small</button>
+                        <button  value="small" name="filterX-Small">Small</button>
+                        <button type="checkbox" value="small" name="filterX-Small">Medium</button>
+                        <button  type="checkbox" class="active" value="soccer" name="filter">Large</button>
+                        <button type="checkbox" value="small" name="filterX-Small">X-Large</button>
+                        <button type="checkbox" value="small" name="filterX-Small">XX-Large</button>
+                        <button type="checkbox" value="small" name="filterX-Small">3X-Large</button>
+                        <button type="checkbox" value="small" name="filterX-Small">4X-Large</button>
+                    </div>
+                </div>
+            <hr>
+            <div class="category">
+                <h4>Category</h4>
+                <div class="filter-group">
+                    <label><input type="checkbox" class="filter" value="soccer"  name="filter"> Format</label><br>
+                    <label><input type="checkbox" class="filter" value="tennis" name="filter"> Casual</label><br>
+                    <label><input type="checkbox" class="filter" value="Tennis" name="filter"> Party</label><br>
+                    <label><input type="checkbox" class="filter" value="basketball" name="filter"> Gym</label><br>
+                </div>
+
+                <a href=""> <button  id="btn" >Applay Filter</button></a>
+
+        </aside>
+        
+        <main class="product-section">
+            <h2>Clothes</h2>
+            <div class="products">
+                <div class="product" data-category="soccer">
+                    <img src="./assets/images/img1.png" alt="Soccer Ball">
+                    <h3>Predator</h3>
+                    <div class="price">
+                        <h4>$500</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" id="bright"></i>
+                            <i class="fa-solid fa-star" id="bright"></i>
+                            <i class="fa-solid fa-star" id="bright"></i>
+                            <i class="fa-solid fa-star" id="bright"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+            <!-- card 2-->
+                <div class="product" data-category="soccer">
+                    <img src="./assets/images/img2.png" alt="Tennis Racket">
+                    <h3>Ultra</h3>
+                    <div class="price">
+                        <h4>$500</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                <!--card 3-->
+                <div class="product" data-category="soccer">
+                    <img src="./assets/images/img3.png" alt="Basketball">
+                    <h3>Fitbit Sense2</h3>
+                    <div class="price">
+                        <h4>$500</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                <!--card 4-->
+                <div class="product" data-category="soccer">
+                    <img src="./assets/images/img4.png" alt="Soccer Shoes">
+                    <h3>Clarks Loafers</h3>
+                    <div class="price">
+                        <h4>500$</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                 <!--card 5-->
+                 <div class="product" data-category="soccer">
+                    <img src="./assets/images/img5.png" alt="Soccer Shoes">
+                    <h3>Clarks Loafers</h3>
+                    <div class="price">
+                        <h4>500$</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                 <!--card 6-->
+                 <div class="product" data-category="soccer">
+                    <img src="./assets/images/img6.png" alt="Soccer Shoes">
+                    <h3>Clarks Loafers</h3>
+                    <div class="price">
+                        <h4>500$</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                 <!--card 7-->
+                 <div class="product" data-category="soccer">
+                    <img src="./assets/images/img7.png" alt="Soccer Shoes">
+                    <h3>Clarks Loafers</h3>
+                    <div class="price">
+                        <h4>500$</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                 <!--card 8-->
+                 <div class="product" data-category="soccer">
+                    <img src="./assets/images/img8.png" alt="Soccer Shoes">
+                    <h3>Clarks Loafers</h3>
+                    <div class="price">
+                        <h4>500$</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+
+                 <!--card 9-->
+                 <div class="product" data-category="soccer">
+                    <img src="./assets/images/img9.png" alt="Soccer Shoes">
+                    <h3>Clarks Loafers</h3>
+                    <div class="price">
+                        <h4>500$</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="">Add To Cart</a>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+
+     <!-- Start Footer -->
+     <div class="footer">
+        <div class="links">
+            <ul class="social">
+                <li>
+                    <a href="index.html"><img src="./assets/images/Mask group.png" alt="" class="logo"></a>
+                </li>
+                <li>
+                    <a href="#"> <img src="./assets/images/Facebook.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/Instagram.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/X.png" alt=""></a>
+                </li>
+            </ul>
+            <ul class="customer">
+                <h3>Customer Sercvices</h3>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul class="profile">
+                <h3>Profile</h3>
+                <li><a href="profile.html">My account</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Account settings</a></li>
+            </ul>
+            <ul class="contact-us">
+                <h3>Contact us</h3>
+                <li><a href="tel:+305-555-0123">Phone: 305-555-0123</a></li>
+                <li><a href="mailto:contactstore@fakemail.com">Email: contactstore@fakemail.com</a></li>
+                <li>Address: 789 Elm St. Orlando, FL 32801</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="terms">
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+            <span>© 2024 Luxira, All Rights Reserved.</span>
+        </div>
+        </div> 
+        <!-- End Footer -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+/* Start Global Rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+    background-image: url("../images/circles.svg");
+    background-size: cover;
+}
+.container {
+    padding: 0 30px 0 30px;
+    margin: 0 auto 0 auto ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* End Global Rules */
+
+/* Start Register form */
+.regester{
+    width: 900px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 60px;
+    box-shadow: 5px 10px 11px black;
+}
+
+.regester h1{
+    margin-bottom: 20px;
+}
+
+.regester p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #7b7a7a;
+}
+
+
+form .content{
+    display: flex;
+    gap: 30px;
+}
+
+.regester .content .first-name{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    position: relative;
+}
+
+.regester .content .first-name img {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 24px;
+    margin-left: 10px;
+} 
+
+.regester .content .sur-name{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    position: relative;
+}
+
+.regester .content .sur-name img {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 24px;
+    margin-left: 10px;
+} 
+
+.regester .content input[type="text"]{
+    width: 100%;
+    padding: 6px 41px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.regester .content .mail{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.regester .content .mail input[type="email"] {
+    width: 100%;
+    padding: 6px 41px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.regester .content .mail img {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 24px;
+    margin-left: 10px;
+}
+
+
+.regester .content .gender{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.regester .content .gender img {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 24px;
+    margin-left: 10px;
+}
+
+.regester .content .pass{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.regester .content .pass img{
+    width: 22px;
+}
+
+.regester .content .pass .lock{
+    left: 0;
+    top: -51px;
+    margin-left: 10px;
+}
+
+.regester .content .pass .eye{
+    left: calc(100% - 35px);
+    top: -28px;
+}
+
+.regester .content .pass input[type="password"]{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px 41px;
+    border-radius: 5px;
+}
+
+.regester .content .confirm-pass{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+.regester .content .confirm-pass img{
+    width: 22px;
+    top: -28px;
+}
+
+.regester .content .confirm-pass .lock{
+    left: 0;
+    margin-left: 10px;
+}
+
+.regester .content .confirm-pass .eye{
+    left: calc(100% - 35px);
+    top: -50px;
+}
+
+.regester .content .confirm-pass input[type="password"]{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px 41px;
+    border-radius: 5px;
+}
+
+.regester .content input[type="text"]
+,.regester .content input[type="email"]
+,.regester .content .gender select
+,.regester .content .pass input[type="password"]
+,.regester .content .confirm-pass input[type="password"]{
+        border: 1px solid black;
+}
+
+.regester .content input[type="text"]
+,.regester .content input[type="email"]
+,.regester .content .gender select
+,.regester .content .pass input[type="password"]
+,.regester .content .confirm-pass input[type="password"]:focus{
+    outline: none;
+}
+
+.regester form .log-in{
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #F5EE1C;
+    color: white;
+    border: 1px solid #F5EE1C;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.regester form p {
+    width: 115px;
+    margin: auto;
+    font-size: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.regester form p::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 200px);
+    height: 1px;
+    background-color: #c1c1c1;
+    right: -270%;
+    top: 50%;
+}
+
+.regester form p::before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 200px);
+    height: 1px;
+    background-color: #c1c1c1;
+    right: 115%;
+    top: 50%;
+}
+
+.regester form .google {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 6px;
+    color: #a7a7a7;
+}
+.regester form .apple {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 6px;
+    color: #a7a7a7;
+}
+
+.regester form img{
+    width: 30px;
+    position: relative;
+    top: -41px;
+    left: 260px;
+}
+/* End Register form */
+
+
+
+
+
+
+/* إضافة هذا الـ CSS إلى ملف signUp.css */
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    margin-top: 5px;
+}
+
+.error {
+    border-color: red !important;
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

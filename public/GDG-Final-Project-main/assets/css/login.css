@@ -1,0 +1,211 @@
+/* Start Global Rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+    background-image: url("../images/circles.svg");
+    background-size: cover;
+}
+.container {
+    padding: 0 30px 0 30px;
+    margin: 0 auto 0 auto ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* End Global Rules */
+
+
+/*  Start Login Form  */
+.login{
+    width: 529px;
+    height: 768px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+    box-shadow: 5px 10px 11px black;
+}
+
+.login p{
+    font-size: 16px;
+}
+
+.login p a {
+    color: #0F4D68;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.login h1
+,.login p {
+    margin-bottom: 20px;
+}
+
+.login form .mail{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login form .mail img {
+    position: absolute;
+    top: 44px;
+    left: 12px;
+    width: 25px;
+}
+
+.login form .mail label{
+    font-weight: bold;
+}
+
+.login form .mail input[type="email"]{
+    padding: 10px 10px 10px 45px;
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;
+}
+
+.login form .pass{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.login form .pass img {
+    position: absolute;
+    top: 44px;
+    width: 25px;
+}
+
+.login form .pass .eye {
+    left: calc(100% - 40px);
+}
+
+.login form .pass .lock{
+    left: 12px;
+
+}
+
+.login form .pass label{
+    font-weight: bold;
+}
+
+.login form .pass input[type="password"] {
+    padding: 10px 10px 10px 45px;
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;
+}
+
+.login form .mail input[type="email"]
+,.login form .pass input[type="password"]:focus{
+    outline: none;
+}
+
+.login form .box{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.login form .box .text{
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    margin-right: 7px;
+}
+
+.login form .box a {
+    color: #0F4D68;
+    font-weight: bold;
+}
+
+
+.login form .log-in{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #F5EE1C;
+    color: white;
+    border: 1px solid #F5EE1C;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.login form p {
+    width: 115px;
+    margin: auto;
+    font-size: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.login form p::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: #c1c1c1;
+    right: -110%;
+    top: 50%;
+}
+
+.login form p::before{
+    content: "";
+    position: absolute;
+    width: calc(100%);
+    height: 1px;
+    background-color: #c1c1c1;
+    right: 115%;
+    top: 50%;
+}
+
+.login form .google {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 6px;
+    color: #a7a7a7;
+}
+.login form .apple {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 6px;
+    color: #a7a7a7;
+}
+
+.login form img{
+    width: 30px;
+    position: relative;
+    top: -41px;
+    left: 100px;
+}
+/*  End Login Form  */
