@@ -28,6 +28,7 @@ async function fetchUserData(token) {
         if (userData) {
             document.getElementById("userName").textContent = userData.name;
             document.getElementById("userEmail").textContent = userData.email;
+
         }
     } catch (error) {
         console.error("خطأ في جلب بيانات المستخدم:", error);
