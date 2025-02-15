@@ -103,4 +103,9 @@ a{
     color: white;
     border: 1px solid #F5EE1C;
     border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.forget-pass form input[type = "submit"]:hover{
+    background-color: #bab52c;
 }

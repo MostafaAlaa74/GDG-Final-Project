@@ -154,6 +154,11 @@ input[type="checkbox"]{
     border-radius: 6px;
     margin-top: 10px;
     margin-bottom: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.login form .log-in:hover{
+    background-color: #bab52c;
 }
 
 .login form p {

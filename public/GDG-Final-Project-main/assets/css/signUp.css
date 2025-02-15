@@ -224,8 +224,12 @@ form .content{
     font-weight: bold;
     border-radius: 6px;
     margin-bottom: 40px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
-
+.regester form .log-in:hover{
+    background-color: #bab52c;
+}
 .regester form p {
     width: 115px;
     margin: auto;

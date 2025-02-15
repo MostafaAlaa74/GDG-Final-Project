@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,11 +25,10 @@ use Illuminate\Support\Facades\Route;
 // User Routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post("/login", [AuthController::class, "login"])->name('login');
-// Route::post("/logout", [AuthController::class, "logout"])->middleware('auth:sanctum');
 Route::middleware('auth:sanctum')->post('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/user' , [AuthController::class , 'getuser'])->middleware('auth:sanctum');
+Route::post('/upload', [AuthController::class , 'uploadImage'])->middleware('auth:sanctum');
 // Product Routes
 Route::apiResource("/product", ProductController::class);
 // Category Routes

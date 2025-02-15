@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
+
 
 class AuthController extends Controller
 {
@@ -57,6 +59,29 @@ class AuthController extends Controller
         ]);
     }
 
+    public function uploadImage(Request $request){
+        $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+
+            $imagename = time() . "." . $image->extension();
+
+            $image->move(public_path('storage/productsImage'), $imagename);
+
+            $imagePath = '/storage/productsImage/' . $imagename;
+        }
+        $user = Auth::user();
+        
+        $all = User::create([
+            'imagePath' => $imagePath
+        ]);
+        return([
+            "massege" => "Photo Updated.",
+            'data' => $all
+        ]);
+    }
 
     public function logout(Request $request)
     {
