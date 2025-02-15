@@ -481,6 +481,15 @@ header .inputs form input[type="submit"]:hover {
     font-weight: bold;
 }
 
+.offers .container .carts .cart a{
+    display: block;
+    width: 100%;
+    background-color: #F5EE1C;
+    color: white;
+    padding: 10px;
+    border: 1px solid #F5EE1C;
+}
+
 .offers .container .carts .cart button{
     width: 100%;
     background-color: #F5EE1C;
@@ -499,6 +508,15 @@ header .inputs form input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
+}
+
+.recommend .container .carts .cart a{
+    display: block;
+    width: 100%;
+    background-color: #F5EE1C;
+    color: white;
+    padding: 10px;
+    border: 1px solid #F5EE1C;
 }
 
 .recommend .container .text h2{
@@ -578,7 +596,7 @@ header .inputs form input[type="submit"]:hover {
     padding: 10px;
     border: 1px solid #F5EE1C;
 }
-/* End Recomment */
+/* End Recommend */
 
 
 
