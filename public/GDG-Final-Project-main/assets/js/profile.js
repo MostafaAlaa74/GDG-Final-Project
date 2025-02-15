@@ -1,4 +1,4 @@
-// جلب التوكن من Local Storage
+
 const token = localStorage.getItem("authToken");
 
 if (!token) {
@@ -7,7 +7,7 @@ if (!token) {
     fetchUserData(token);
 }
 
-// دالة جلب بيانات المستخدم باستخدام التوكن
+
 async function fetchUserData(token) {
     try {
         const response = await fetch("http://127.0.0.1:8000/api/user", {
