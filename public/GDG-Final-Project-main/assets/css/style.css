@@ -115,6 +115,10 @@ header .header .icons .shopping{
     position: relative;
 }
 
+header .header .icons .shopping a{
+    color: #000000;
+}
+
 header .header .icons .shopping::after{
     content: "";
     position: absolute;
@@ -434,7 +438,7 @@ header .inputs form input[type="submit"]:hover {
     margin: auto;
     padding-left: 20px;
     position: relative;
-    transition: 1s;
+    transition: 0.5s ease;
 }
 
 .offers .container .carts .cart:hover{
@@ -684,6 +688,10 @@ header .inputs form input[type="submit"]:hover {
     margin: auto;
     margin-top: 100px;
 } 
+a.all{
+    width: 300px;
+    text-align: center;
+}
 /* End Explore */
 
 

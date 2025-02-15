@@ -9,9 +9,27 @@ html {
     scroll-behavior:smooth;
 }
 
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 body{
+    font-family: Arial, sans-serif;
     font-family: Poppins;
+    position: relative;
 }
+
+body .up{
+    position: absolute;
+    font-size: 40px;
+    left: 50px;
+    bottom: 400px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    z-index:1000;
+}
+
 .container {
     padding: 0 30px 0 30px;
     margin: 0 auto 0 auto ;
@@ -100,10 +118,6 @@ header .header .icons .user a{
 
 header .header .icons .shopping{
     position: relative;
-}
-
-header .header .icons .shopping a{
-    color: #000000;
 }
 
 header .header .icons .shopping::after{
@@ -249,12 +263,14 @@ header .inputs form input[type="submit"]:hover {
 }
 
 
-
-
+.link .container ul .head a {
+    color: #000;
+    font-family:Poppins;
+    font-size: 32px;
+}
 
 
 /* Start Offers */
-
 .offers {
     padding-top: 100px;
 }
@@ -294,8 +310,8 @@ header .inputs form input[type="submit"]:hover {
     margin: auto;
     padding-left: 20px;
     position: relative;
-    transition: 0.5s ease;
 }
+
 .offers .container .carts .cart:hover{
     background-color: rgba(255, 255, 0, 0.2);
 }
@@ -344,6 +360,227 @@ header .inputs form input[type="submit"]:hover {
     padding: 10px;
     border: 1px solid #F5EE1C;
 }
+
+
+
+/* Start recommended */
+.recommended {
+    padding-top: 100px;
+}
+
+.recommended .container .text{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.recommended .container .text h2{
+    font-size: 36px;
+}
+
+.recommended .container .text button{
+    background-color: #F5EE1C;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 48px;
+    border: 1px solid #F5EE1C;
+}
+
+.recommended .container .carts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px , 1fr));
+    column-gap: 23px;
+    row-gap: 60px
+}
+
+.recommended .container .carts .cart{
+    width: 270px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding:20px;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    padding-left: 20px;
+    position: relative;
+}
+
+.recommended .container .carts .cart:hover{
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.recommended .container .carts .cart .img img{
+    width: fit-content;
+}
+
+.recommended .container .carts .cart .icon i{
+    color: white;
+    background-color: rgba(197, 197, 197, 0.579);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.recommended .container .carts .cart .icon:hover i{
+    color: red;
+}
+
+.recommended .container .carts .cart p {
+    padding-top: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.recommended .container .carts .cart .price {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recommended .container .carts .cart .price .new{
+    color:#DB4444;
+    font-weight: bold;
+}
+
+.recommended .container .carts .cart a{
+    display: block;
+    width: 100%;
+    background-color: #F5EE1C;
+    color: white;
+    padding: 10px;
+    border: 1px solid #F5EE1C;
+}
+/* End Recommended */
+
+
+
+
+
+/* Start Explore */
+.Explore {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+}
+
+.Explore .container .text{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.Explore .container .text h2{
+    font-size: 36px;
+}
+
+.Explore .container .text .btns button{
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    color: #000000;
+    padding: 5px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #F5F5F5;
+}
+
+.Explore .container .carts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px , 1fr));
+    column-gap: 23px;
+    row-gap: 60px;
+}
+
+.Explore .container .carts .cart{
+    width: 270px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding:20px;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    padding-left: 20px;
+    position: relative;
+    transition: 1s;
+}
+
+.Explore .container .carts .cart:hover{
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.Explore .container .carts .cart .img img{
+    width: fit-content;
+}
+
+.Explore .container .carts .cart .icon i{
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.Explore .container .carts .cart .icon:hover i{
+    color: red;
+}
+
+.Explore .container .carts .cart p {
+    padding-top: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.Explore .container .carts .cart .price {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Explore .container .carts .cart .price .new{
+    color:#DB4444;
+    font-weight: bold;
+}
+
+.Explore .container .carts .cart button{
+    width: 100%;
+    background-color: #F5EE1C;
+    color: white;
+    padding: 10px;
+    border: 1px solid #F5EE1C;
+}
+
+.Explore .container .all{
+    display: block;
+    background-color: #F5EE1C;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 48px;
+    border: 1px solid #F5EE1C;
+    margin: auto;
+    margin-top: 100px;
+} 
+/* End Explore */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

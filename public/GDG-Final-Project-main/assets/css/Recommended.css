@@ -102,6 +102,10 @@ header .header .icons .shopping{
     position: relative;
 }
 
+header .header .icons .shopping a{
+    color: #000000;
+}
+
 header .header .icons .shopping::after{
     content: "";
     position: absolute;
@@ -290,6 +294,10 @@ header .inputs form input[type="submit"]:hover {
     margin: auto;
     padding-left: 20px;
     position: relative;
+    transition: 0.5s ease;
+}
+.recommended .container .carts .cart:hover{
+    background-color: rgba(255, 255, 0, 0.2);
 }
 
 .recommended .container .carts .cart .img img{

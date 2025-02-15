@@ -32,6 +32,7 @@ document.querySelector("form").addEventListener("submit" , async function (event
         if(response.ok) {
             console.log("Registration Successful:", data);
             alert("Registration Successful: " + data.message)
+            localStorage.setItem("authToken", data.token);
             window.location.href = "index.html";
         } else{
             console.log("Registration Failed:" , data);

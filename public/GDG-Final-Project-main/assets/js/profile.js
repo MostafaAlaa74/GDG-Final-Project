@@ -28,7 +28,11 @@ async function fetchUserData(token) {
         if (userData) {
             document.getElementById("userName").textContent = userData.name;
             document.getElementById("userEmail").textContent = userData.email;
-
+            // document.getElementById("userEmail").ariaPlaceholder = userData.email;
+            document.getElementById("myInput").setAttribute("placeholder", userData.email);
+            document.getElementById("Name").setAttribute("placeholder", userData.name);
+            document.getElementById("gender").setAttribute("placeholder", userData.gender);
+            // document.getElementById("myInput").setAttribute("placeholder", userData.email);
         }
     } catch (error) {
         console.error("خطأ في جلب بيانات المستخدم:", error);

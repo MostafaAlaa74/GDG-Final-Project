@@ -25,13 +25,13 @@ document.querySelector(".login").addEventListener("submit", async function (even
     try {
         const response = await fetch("http://127.0.0.1:8000/api/login", {
             method: "POST",
-            headers: { "Content-Type": "application/json" , "Accept":"application/json"},
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
             body: JSON.stringify({ email, password })
         });
 
         const data = await response.json();
 
-        if (response.ok) {
+        if (response.ok && data.token) {  // Ensure response is OK and token exists
             console.log("Login Successful:", data);
             alert("Login Successful: " + data.message);
 
@@ -45,7 +45,7 @@ document.querySelector(".login").addEventListener("submit", async function (even
                 localStorage.removeItem("rememberedEmail");
             }
 
-            // Redirect to another page (e.g., dashboard)
+            // Redirect only if the token exists
             window.location.href = "index.html"; // Change to your desired redirect page
         } else {
             console.error("Login Failed:", data);
@@ -63,5 +63,14 @@ window.addEventListener('load', () => {
     if (rememberedEmail) {
         document.querySelector('.email').value = rememberedEmail;
         document.querySelector('#remember').checked = true;
+    }
+});
+
+// Check if user is already logged in (Prevent access if no token)
+window.addEventListener('load', () => {
+    const authToken = localStorage.getItem("authToken");
+    if (!authToken) {
+        console.warn("No token found. Redirecting to login page.");
+        window.location.href = "login.html"; // Redirect back to login page if no token
     }
 });

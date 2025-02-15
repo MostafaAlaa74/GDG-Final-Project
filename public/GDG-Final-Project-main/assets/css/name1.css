@@ -90,6 +90,10 @@ header .header .icons .shopping{
   position: relative;
 }
 
+header .header .icons .shopping a{
+  color: #000000;
+}
+
 header .header .icons .shopping::after{
   content: "";
   position: absolute;
